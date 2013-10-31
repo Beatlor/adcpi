@@ -36,12 +36,12 @@ with i2c.I2CMaster(1) as bus:
 			v = (t * 0.000154	)
 			if (v < 5.5):
 				return v
-		return 0.00
+			return 0.00
 		
 		
 	while True:
 		# init channel 1 on adc
-		ChangeChannel(adc_address1, adc_channel1))
+		ChangeChannel(adc_address1, adc_channel1)
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
@@ -54,7 +54,7 @@ with i2c.I2CMaster(1) as bus:
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
 		
 		# init channel 2 on adc
-		ChangeChannel(adc_address1, adc_channel2))
+		ChangeChannel(adc_address1, adc_channel2)
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
 		print ("1: %02f" % getrepeatadcreading(adc_address1))
